@@ -38,7 +38,7 @@
         font-weight: bold;
         color: $colorPrincipal;
         font-size: 50px;
-        font-family: "Aboreto";
+        font-family: $fuentePrincipal;
         margin-left: 100px;
     }
     
@@ -111,7 +111,7 @@
         font-weight: bold;
         color: $colorPrincipal;
         font-size: 45px;
-        font-family: "Aboreto";
+        font-family: $fuentePrincipal;
         margin-left: 100px;
     }
 }
@@ -133,7 +133,7 @@
         font-weight: bold;
         color: $colorPrincipal;
         font-size: 45px;
-        font-family: "Aboreto";
+        font-family: $fuentePrincipal;
         margin-left: 100px;
         margin-top: 80px;
     }
