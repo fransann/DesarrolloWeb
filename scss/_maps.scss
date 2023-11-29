@@ -1,0 +1,12 @@
+$remarcosMap:(bordo:$colorPrincipal, negro:black);
+
+
+.rojita {
+    color: map-get($map: $remarcosMap, $key:bordo);
+    font-weight: bold;
+}
+
+.negrita {
+    color: map-get($map: $remarcosMap, $key:negro);
+    font-weight: bold;
+}

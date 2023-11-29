@@ -1,0 +1,12 @@
+@mixin titulos{
+    font-family: "Aboreto";
+    font-weight: 20px;
+    color: $colorPrincipal;
+    font-size: 50px;
+}
+
+@mixin portadas{
+    height: 400px;
+    width: 400px;
+    justify-self: end;
+}

@@ -1,0 +1,152 @@
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 100px;
+
+    .principalImg {
+        border: black solid 5px;
+        @include portadas;
+    }
+
+    .parrafo {
+        font-size: 40px;
+        margin: 55px;
+        margin-top: -10px; /* la unica forma de que quede bien es poniendo el numero negativo*/
+        list-style-type: none;
+    }
+}
+/* Para albums */
+.portadaAlbum {
+    @include portadas;
+}
+
+.informacion {
+    margin-top: 20px;
+}
+.arriba{
+    width: 70px;
+    height: 70px;
+    position: sticky;
+    top: 760px;
+    left: 95%;
+}
+
+.queFue {
+    margin-top: 35px;
+
+    .titulo {
+        font-weight: bold;
+        color: $colorPrincipal;
+        font-size: 50px;
+        font-family: "Aboreto";
+        margin-left: 100px;
+    }
+    
+
+    .parrafo {
+        font-size: 35px;
+        
+    }
+}
+
+.album1 {
+    grid-area: album1;
+    justify-self: end;
+}
+
+.album2 {
+    grid-area: album2;
+}
+
+.album3 {
+    grid-area: album3;
+    justify-self: end;
+}
+
+.album4 {
+    grid-area: album4;
+}
+
+.albums {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "album1 album2"
+        "album3 album4";
+    gap: 30px;
+
+    .titulo {
+        @include titulos;
+        grid-area: titulo;
+        /* FLEX */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+
+}
+
+.tamano_img {
+    height: 300px;
+    width: 300px;
+}
+
+.historia {
+    margin-top: 150px;
+
+    .titulo {
+        @include titulos;
+        margin-bottom: 100px;
+        font-weight: bold;
+    }
+    .parrafo {
+        font-size: 35px;
+        margin: 60px;
+    }
+
+    .tituloSecundario {
+        font-weight: bold;
+        color: $colorPrincipal;
+        font-size: 45px;
+        font-family: "Aboreto";
+        margin-left: 100px;
+    }
+}
+
+.info {
+    .parrafo {
+        font-size: 35px;
+        margin: 60px;
+        margin-top: 50px;
+        font-weight: 400;
+    }
+
+    .informacion {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .titulo {
+        font-weight: bold;
+        color: $colorPrincipal;
+        font-size: 45px;
+        font-family: "Aboreto";
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+}
+
+.listaLarga {
+    display: flex;
+    flex-wrap: wrap;
+
+    .primeraColumna {
+        margin-right: 100px;
+    }
+}
+
+
+

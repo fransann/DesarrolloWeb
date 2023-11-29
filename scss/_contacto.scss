@@ -1,0 +1,21 @@
+.formulario {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    color: $colorPrincipal;
+    margin-bottom: 150px;
+}
+label{
+    font-size: 40px;
+}
+
+textarea {
+    height: 300px;
+    width: 500px;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+}

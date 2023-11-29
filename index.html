@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos Tu Generis, un sitio creado para dar a conocer a las generaciones de hoy en
+    día la talentosa e histórica banda del rock nacional,Sui
+    Generis.">
+    <meta name="keyword">
     <title>Tu Generis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <h1 class="tituloPrincipal"> Tu Generis</h1>
         <nav>
             <ul class="navegador">
@@ -23,16 +30,17 @@
         <section class="intro">
             <img src="img/suigeneris.jpg" alt="Imagen de nito y charly" class="principalImg">
 
-            <p class="parrafo">Somos "Tu Generis", un sitio creado para dar a conocer <br> a las generaciones de hoy en
-                día la talentosa e histórica banda del rock nacional, <span class="rojita">Sui Generis</span>. <br>
+            <p class="parrafo">Somos "Tu Generis", un sitio creado para dar a conocer a las generaciones de hoy en
+                día la talentosa e histórica banda del rock nacional,<br class="brPrincipal"> <span class="rojita">Sui
+                    Generis</span>. <br class="brPrincipal">
                 Para eso proveemos información, muestras y en caso de interés, poder adquirir sus discos mediante
                 nuestro contacto.</p>
         </section>
-        <section class="queFue">
+        <section class="queFue container-fluid" >
             <h3 class="titulo">¿Qué fue sui generis?</h3>
 
-            <p class="parrafo">Sui Generis fue una banda argentina de Rock formada principálmente por <span
-                    class="negrita">Charly Garcia</span> (teclados, guitarra acústica, voz y composiciones) y <span
+            <p class="parrafo">Sui Generis fue una banda argentina de Rock formada principálmente por
+                <span class="negrita">Charly Garcia</span> (teclados, guitarra acústica, voz y composiciones) y <span
                     class="negrita">Nito Mestre </span>(flauta, guitarra acústica y voz),
                 considerada como una de las más importantes de los orígenes del rock latinoamericano. <br> <br>
                 La banda surgió en 1968 de la fusión de dos grupos de rock colegiales. Si bien a lo largo de su carrera
@@ -42,30 +50,32 @@
                 Otros miembros estables de Sui Generis fueron: Carlos Piegari; Beto Rodríguez; Juan Bellia; Alejando
                 Correa; Rolando Fortich; Francisco Prati; Juan Rodriguez y Rinaldo Rafanelli.</p>
         </section>
-            
-        
-        <section class= "albums" id="seccion_albumes">
-            <h2 class="titulo"> Álbums</h2>
-            
+        <a href="#top">
+            <img src="./img/flecha.png" alt="flecha  para ir a arriba" class="arriba" data-aos="fade-up">
+        </a>
+
+        <section class="albums" id="seccion_albumes">
+            <h2 class="titulo text-center"> Álbums</h2>
+
             <a href="./html/album1.html" class="album1">
                 <img src="./img/vida.jpg" alt="vida" class="tamano_img">
             </a>
-    
+
             <a href="./html/album2.html" class="album2">
                 <img src="./img/confesiones de invierno.jpg" alt="confesiones de invierno" class="tamano_img">
             </a>
-    
+
             <a href="./html/album3.html" class="album3">
                 <img src="./img/sinfonia para adolescentes.webp" alt="sinfonia para adolescentes" class="tamano_img">
             </a>
-    
+
             <a href="./html/album4.html" class="album4">
-                <img src="./img/pequeñas anecdotas.jpg" alt="pequeñas anecdotas" class="tamano_img">
+                <img src="./img/pequenas anecdotas.jpg" alt="pequeñas anecdotas" class="tamano_img">
             </a>
         </section>
 
         <section class="historia">
-            <h3 class="titulo">Historia</h3>
+            <h3 class="titulo text-center">Historia</h3>
 
             <h3 class="tituloSecundario">Censura:</h3>
 
@@ -93,7 +103,7 @@
                 sociopolítica que se vivía en Argentina y los problemas de censura que afectaron al álbum Pequeñas
                 Anecdotas Sobre las Instituciones, fueron algunas de las causas que llevaron a la disolución del dúo en
                 1975. <br><br>
-                
+
                 Para este álbum, Sui Generis se transforma en un cuarteto eléctrico, ya que se sumanRinaldo
                 Rafanelli en el bajo y Juan Rodriguez en la batería, Este profundo cambio -impulsado por García-
                 desconcertó al público y frenó un poco el éxito comercial del grupo. <br><br>
@@ -112,10 +122,18 @@
 
         </section>
     </main>
-    <footer>
+
+
+    <footer class="text-center">
         <p>Sitio web creado por Francisco Santillán.</p>
         <p>Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 

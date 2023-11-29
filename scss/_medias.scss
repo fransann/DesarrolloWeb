@@ -1,0 +1,228 @@
+/*medias*/
+@media(max-width:1600px) {
+    .arriba{
+        display: none;
+    }
+    .intro {
+        display: flex;
+        /* Cambiamos el display a flex en dispositivos móviles */
+        flex-direction: column;
+        /* Alineamos los elementos en columna */
+        align-items: center;
+        /* Centramos horizontalmente */
+
+        br.brPrincipal {
+            display: none;
+        }
+    }
+    .tituloLargo{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+
+    /* Cabecera */
+    .tituloPrincipal {
+        font-size: 50px;
+        height: 100px;
+    }
+    .tituloLargo{
+        font-size: 40px;
+    }
+
+    .navegador {
+        font-size: 40px;
+        /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        margin-left: 0;
+        /* Elimina el margen izquierdo en pantallas más pequeñas */
+        padding: 0;
+    }
+    .tamano_img:hover{
+        height: 300px;
+        width: 300px;
+    }
+
+    .navegador>* {
+        flex: 1;
+        /* Hace que todos los elementos ocupen el mismo espacio en pantallas más pequeñas */
+        text-align: center;
+
+        /* Centra el texto en cada elemento */
+        a:hover {
+            font-size: inherit;
+            /* O cualquier otro estilo que desees en dispositivos móviles */
+        }
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .principalImg {
+            border: black solid 3px;
+            justify-self: center;
+            height: 300px;
+            width: 300px;
+        }
+
+        .parrafo {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .portadaAlbum {
+            height: 300px;
+            width: 300px;
+            justify-self: center;
+        }
+        
+        
+        
+        .queFue {
+            .titulo {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        .tituloLargo {
+            font-size: 45px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+
+    /* Cabecera */
+    .tituloPrincipal {
+        font-size: 30px;
+        height: 75px;
+        width: 100%;
+    }
+
+    .navegador {
+        font-size: 20px;
+        /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    /* INTRO */
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 50px;
+
+        .principalImg {
+
+            justify-self: center;
+            height: 150px;
+            width: 150px;
+        }
+
+        .parrafo {
+            justify-self: start;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .portadaAlbum {
+            height: 180px;
+            width: 180px;
+            justify-self: center;
+        }
+
+        .informacion {
+            margin-top: 10px;
+        }
+    }
+
+    .info {
+        .parrafo {
+            font-size: 20px;
+            margin-top: 30px;
+            margin: 20px;
+        }
+
+        .titulo {
+            font-size: 30px;
+            margin: 0;
+            text-align: center;
+        }
+
+    }
+
+    /* QUE FUE */
+    .queFue {
+        .titulo {
+            font-size: 30px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .parrafo {
+            margin: 20px;
+            font-size: 20px;
+        }
+    }
+
+    /* ALBUMS */
+    .albums {
+        margin-top: 50px;
+        gap: 15px;
+
+        .titulo {
+            font-size: 30px;
+        }
+
+        .tamano_img {
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .tituloLargo {
+        font-size: 22px;
+    }
+
+    /* HISTORIA */
+    .historia {
+        margin-top: 50px;
+
+        .titulo {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .tituloSecundario {
+            font-size: 25px;
+            margin-left: 50px;
+        }
+
+        .parrafo {
+            font-size: 20px;
+            margin: 20px;
+        }
+    }
+
+    .formulario {
+        font-size: 15px;
+    }
+    label{
+        font-size: 25px;
+    }
+
+    textarea {
+        height: 130px;
+        width: 300px;
+    }
+
+    footer {
+        height: 75px;
+        font-size: 14px;
+    }
+
+    .tituloLargo2 {
+        font-size: 25px;
+    }
+}

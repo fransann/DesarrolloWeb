@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $colorPrincipal;
+    height: 120px;
+    font-family: "Aboreto";
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 10
+}
