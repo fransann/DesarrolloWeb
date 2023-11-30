@@ -14,6 +14,9 @@
         br.brPrincipal {
             display: none;
         }
+        .parrafo{
+            margin: 20px;
+        }
     }
     .tituloLargo{
         font-size: 60px;
@@ -56,19 +59,15 @@
     }
 
     .intro {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
         .principalImg {
             border: black solid 3px;
-            justify-self: center;
             height: 300px;
             width: 300px;
         }
 
         .parrafo {
             font-size: 30px;
-            margin: 0;
+            margin: 15px;
         }
 
         .portadaAlbum {
@@ -221,8 +220,110 @@
         height: 75px;
         font-size: 14px;
     }
+    .parrafoCont{
+        font-size: 20px;
+    }
 
     .tituloLargo2 {
         font-size: 25px;
     }
 }
+
+@media screen and (max-width:480px){
+    .intro {
+        display: flex;
+        /* Cambiamos el display a flex en dispositivos móviles */
+        flex-direction: column;
+        /* Alineamos los elementos en columna */
+        align-items: center;
+        /* Centramos horizontalmente */
+
+        br.brPrincipal {
+            display: none;
+        }
+        .parrafo{
+            margin: 20px;
+        }
+    }
+    .navegador{
+        font-size: 15px;
+    }
+    .queFue {
+        .titulo {
+            font-size: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .parrafo {
+            margin: 15px;
+            font-size: 15px;
+        }
+    }
+
+    /* ALBUMS */
+    .albums {
+        margin-top: 50px;
+        gap: 15px;
+
+        .titulo {
+            font-size: 22px;
+        }
+
+        .tamano_img {
+            height: 130px;
+            width: 130px;
+        }
+    }
+
+    .tituloLargo {
+        font-size: 22px;
+    }
+
+    /* HISTORIA */
+    .historia {
+        margin-top: 50px;
+
+        .titulo {
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+
+        .tituloSecundario {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        .parrafo {
+            font-size: 15px;
+            margin: 20px;
+        }
+    }
+
+    .formulario {
+        font-size: 15px;
+    }
+    label{
+        font-size: 25px;
+    }
+
+    textarea {
+        height: 100px;
+        width: 250px;
+    }
+
+    footer {
+        height: 75px;
+        font-size: 10px;
+    }
+    .parrafoCont{
+        font-size: 15px;
+    }
+
+    .tituloLargo2 {
+        font-size: 25px;
+    }
+}
+
+
+    

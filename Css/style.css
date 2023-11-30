@@ -158,14 +158,6 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.info .titulo {
-  font-weight: bold;
-  color: #5e0202;
-  font-size: 45px;
-  font-family: "Aboreto";
-  margin-left: 100px;
-  margin-top: 80px;
-}
 
 .listaLarga {
   display: flex;
@@ -196,6 +188,13 @@ textarea {
 input {
   height: 30px;
   width: 250px;
+}
+
+.parrafoCont {
+  font-family: "Aboreto";
+  color: #5e0202;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 footer {
@@ -263,6 +262,9 @@ footer {
   .intro br.brPrincipal {
     display: none;
   }
+  .intro .parrafo {
+    margin: 20px;
+  }
   .tituloLargo {
     font-size: 60px;
   }
@@ -297,19 +299,14 @@ footer {
     font-size: inherit;
     /* O cualquier otro estilo que desees en dispositivos móviles */
   }
-  .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .intro .principalImg {
     border: black solid 3px;
-    justify-self: center;
     height: 300px;
     width: 300px;
   }
   .intro .parrafo {
     font-size: 30px;
-    margin: 0;
+    margin: 15px;
   }
   .intro .portadaAlbum {
     height: 300px;
@@ -423,6 +420,88 @@ footer {
   footer {
     height: 75px;
     font-size: 14px;
+  }
+  .parrafoCont {
+    font-size: 20px;
+  }
+  .tituloLargo2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro {
+    display: flex;
+    /* Cambiamos el display a flex en dispositivos móviles */
+    flex-direction: column;
+    /* Alineamos los elementos en columna */
+    align-items: center;
+    /* Centramos horizontalmente */
+  }
+  .intro br.brPrincipal {
+    display: none;
+  }
+  .intro .parrafo {
+    margin: 20px;
+  }
+  .navegador {
+    font-size: 15px;
+  }
+  .queFue .titulo {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .queFue .parrafo {
+    margin: 15px;
+    font-size: 15px;
+  }
+  /* ALBUMS */
+  .albums {
+    margin-top: 50px;
+    gap: 15px;
+  }
+  .albums .titulo {
+    font-size: 22px;
+  }
+  .albums .tamano_img {
+    height: 130px;
+    width: 130px;
+  }
+  .tituloLargo {
+    font-size: 22px;
+  }
+  /* HISTORIA */
+  .historia {
+    margin-top: 50px;
+  }
+  .historia .titulo {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .historia .tituloSecundario {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .historia .parrafo {
+    font-size: 15px;
+    margin: 20px;
+  }
+  .formulario {
+    font-size: 15px;
+  }
+  label {
+    font-size: 25px;
+  }
+  textarea {
+    height: 100px;
+    width: 250px;
+  }
+  footer {
+    height: 75px;
+    font-size: 10px;
+  }
+  .parrafoCont {
+    font-size: 15px;
   }
   .tituloLargo2 {
     font-size: 25px;
